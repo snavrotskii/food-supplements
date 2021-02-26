@@ -1,0 +1,46 @@
+.search-form {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 700px;
+  margin: auto;
+}
+
+.search-form__results {
+  display  : flex;
+  flex-wrap: wrap;
+}
+
+.search-form__results div {
+  flex-grow: 4;
+  flex-shrink: 3;
+  flex-basis:  30%;
+  border-radius: 10px;
+  border-style: solid;
+  margin: 5px;
+  padding-left: 20px;
+}
+
+.search-form__result_1 {
+  background-color: greenyellow;
+  border-color: green;
+}
+
+.search-form__result_2 {
+  background-color: yellow;
+  border-color: rgb(217, 255, 0);
+}
+
+.search-form__result_3 {
+  background-color: rgb(255, 161, 85);
+  border-color: rgb(255, 166, 0);
+}
+
+.search-form__result_4 {
+  background-color: rgb(255, 131, 122);
+  border-color: rgb(255, 0, 0);
+}
+
+.search-form__result_5 {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(24, 2, 49);
+}
