@@ -77,7 +77,7 @@ class Search extends React.Component {
                         <div>
                           <dt className="sr-only">Users</dt>
                           <dd className="flex justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-2">
-                          <svg className={`h-10 w-10 text-${result.level == 1 ? 'green' : ''}${result.level == 2 ? 'yellow' : ''}${result.level == 3 ? 'pink' : ''}${result.level == 4 ? 'red' : ''}${result.level == 5 ? 'brown' : ''}-400`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <svg className={`h-10 w-10 text-${result.level == 1 ? 'green-400' : ''}${result.level == 2 ? 'yellow-400' : ''}${result.level == 3 ? 'yellow-700' : ''}${result.level == 4 ? 'red-700' : ''}${result.level == 5 ? 'red-900' : ''}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                           </dd>
