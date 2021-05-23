@@ -15,9 +15,8 @@ class Search extends React.Component {
 
           this.ref('code');
           this.field('code');
-          this.field('title');
-          this.field('level');
-          this.field('type');
+          this.field('name');
+          this.field('status');
 
           json.forEach(function (doc) {
             this.add(doc);
@@ -43,7 +42,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="dark:bg-black">
         <section className="px-4 sm:px-6 lg:px-4 xl:px-6 pt-4 pb-4 sm:pb-6 lg:pb-4 xl:pb-6 space-y-4">
           <header className="flex items-center justify-between">
             <h2 className="text-lg leading-6 font-medium text-black">Проверка пищевых добавок</h2>
@@ -67,17 +66,14 @@ class Search extends React.Component {
                     <a className="group block rounded-lg p-4 border border-gray-200">
                       <dl className="grid sm:block lg:grid xl:grid grid-cols-1 grid-rows-1 items-center">
                         <div>
-                          <dt className="sr-only">Title</dt>
-                          <dd className="leading-6 font-medium text-black">{result.title}</dd>
+                          <dd className="leading-6 font-medium text-black dark:text-gray-300">{result.name}</dd>
                         </div>
                         <div>
-                          <dt className="sr-only">Category</dt>
-                          <dd className="text-sm font-medium sm:mb-4 lg:mb-0 xl:mb-4">{result.code}</dd>
+                          <dd className="text-sm font-medium sm:mb-4 lg:mb-0 xl:mb-4 dark:text-gray-300">{result.code}</dd>
                         </div>
                         <div>
-                          <dt className="sr-only">Users</dt>
                           <dd className="flex justify-end sm:justify-start lg:justify-end xl:justify-start -space-x-2">
-                          <svg className={`h-10 w-10 text-${result.level == 1 ? 'green-400' : ''}${result.level == 2 ? 'yellow-400' : ''}${result.level == 3 ? 'yellow-700' : ''}${result.level == 4 ? 'red-700' : ''}${result.level == 5 ? 'red-900' : ''}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <svg className={`h-10 w-10 text-${result.status === 'good' ? 'green-400' : ''}${result.status === 'danger' ? 'yellow-400' : ''}${result.status === 'bad' ? 'red-900' : ''}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
                           </dd>
