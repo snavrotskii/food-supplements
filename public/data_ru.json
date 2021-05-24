@@ -1577,32 +1577,32 @@
   {
     "code": "Е905c (i)",
     "name": "Микрокристаллический воск",
-    "status": "good"
+    "status": "dander"
   },
   {
     "code": "Е905d",
     "name": "Минеральное масло высокой вязкости",
-    "status": "good"
+    "status": "dander"
   },
   {
     "code": "Е905е",
     "name": " Минеральное масло средней и низкой вязкости (класс I)",
-    "status": "good"
+    "status": "dander"
   },
   {
     "code": "Е907",
     "name": "Поли-1-децен гидрогенизированный",
-    "status": "good"
+    "status": "bad"
   },
   {
     "code": "Е912",
     "name": "Эфиры монтановой (октакозановой) кислоты",
-    "status": "good"
+    "status": "dander"
   },
   {
     "code": "Е914",
     "name": "Окисленный полиэтиленовый воск",
-    "status": "good"
+    "status": "dander"
   },
   {
     "code": "Е920",
@@ -1612,7 +1612,7 @@
   {
     "code": "Е927b",
     "name": "Карбамид (мочевина)",
-    "status": "good"
+    "status": "dander"
   },
   {
     "code": "Е928",
